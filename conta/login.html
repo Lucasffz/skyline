@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Skyline > Conta > Login </title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1"><!-- para aparelhos móveis -->
+
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css"><!-- CSS bootstrap -->
+	<link rel="stylesheet" href="../assets/css/main.css"><!-- CSS Custom -->
+	<link rel="stylesheet" href="../assets/css/responsive.css"><!-- CSS Custom -->
+
+</head>
+<body>
+	
+	<header>
+		<nav class="navbar navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+						<a class="navbar-brand logo" href="">
+							<img src="../assets/img/logo-text.png" alt="Skyline">
+						</a>
+					</div>
+					<div id="navbar3" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="../">Início</a></li>
+							<li><a href="#">Sobre</a></li>
+							<li><a href="#">Serviços</a></li>
+							<li><a href="#">Contato</a></li>
+							<li class="dropdown" class="active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Área do Usuário <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="login.html">Acesse sua conta</a></li>
+									<li><a href="cadastro.html">Abra sua conta</a></li>
+									<li><a href="servicos.html">Consulte outros serviços</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+				<!--/.container-fluid -->
+			</nav>
+		</div>
+	</header>
+
+	<section class="site-section" id="login">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-md-7">
+					<h3>Acesse sua conta</h3>
+					<div class="login-form panel panel-default">
+						<div class="panel-heading">
+							<i class="fa fa-lock"></i> <strong>Acesse sua conta</strong>
+						</div>
+						<div class="panel-body">
+							<form action="index.html" method="post" novalidate="">
+								<div class="form-group">
+									<label for="">Agência</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-building-o"></i></span>
+										<input type="text" class="form-control ag" placeholder="0000-0" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">Conta</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+										<input type="text" class="form-control acc" placeholder="00000-0" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">Senha Internet</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="fa fa-key"></i></span>
+										<input type="password" class="form-control pass" placeholder="********" minlength="8" maxlength="8" required>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-right">
+											<button class="btn btn-default" type="button" data-toggle="modal" data-target="#first-access">Primeiro acesso</button>
+											<button class="btn btn-primary" type="submit">Acessar <i class="fa fa-unlock"></i></button>
+										</div>
+									</div>
+								</div>
+								<div class="row"><br>
+									<div class="col-md-12">
+										<div class="alert alert-danger alert-dismissable hide">
+											<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+											<i class="fa fa-exclamation-triangle"></i> <span></span>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<h3>Outras opções</h3>
+
+					<ul>
+						<li>
+							<a href="#">Abra sua conta</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="tooltip" title="Em caso de perda de senha procure uma agência mais próxima para recuperar sua conta">Esqueci minha senha <i class="fa fa-question"></i></a>
+						</li>
+						<li>
+							<a href="#">adipisicing</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div id="first-access" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3 class="modal-title">Primeiro acesso</h3>
+			</div>
+			<div class="modal-body">
+				<p> Por motivos de segurança não é possível cadastrar a senha pela internet. Procure sua agência para liberar o acesso via internet.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+			</div>
+		</div>
+
+	</div>
+
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css"><!-- fonticons -->
+	<link rel="stylesheet" href="../assets/fonts/OpenSans/stylesheet.css"><!-- fonticons -->
+
+	<script src="../assets/js/jquery.min.js"></script><!-- JS bootstrap -->
+	<script src="../assets/js/bootstrap.min.js"></script><!-- JS bootstrap -->
+	<script src="../assets/js/jquery.mask.js"></script><!-- JS custom -->
+	<script src="../assets/js/main.js"></script><!-- JS custom -->
+
+</body>
+</html>
