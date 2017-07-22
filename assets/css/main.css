@@ -1,0 +1,13 @@
+* {
+	outline: none;
+	-webkit-outline: none;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+
+.logo {
+	width: 100%;
+	max-width: 130px;
+}
