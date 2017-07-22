@@ -1,0 +1,22 @@
+.borda{
+	
+	border: 2px solid;
+	height: 200px;
+	
+}
+
+.separar{
+	margin-top: 20px;
+	padding: auto;
+}
+
+.titulo{
+	color: blue;
+	font-family: sans-serif;
+	font-size: 20px;
+
+}
+
+.alinhar{
+	text-align: center;
+}
