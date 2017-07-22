@@ -1,13 +1,29 @@
+/** 
+ * azul: #0463a7;
+ * cinza: #b5b9ba;
+ */
 * {
 	outline: none;
 	-webkit-outline: none;
+	text-rendering: optimizeLegibility;
 }
 img {
 	width: 100%;
 	height: auto;
 }
-
-.logo {
+body {
+	font-family: "OpenSans", sans-serif;
+}
+header .navbar-brand {
 	width: 100%;
-	max-width: 130px;
+	max-width: 300px;
+	height: 100px;
+	display: block;
+}
+header .navbar-nav > li > a {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+header .icon-bar {
+	background: #0463a7;
 }
