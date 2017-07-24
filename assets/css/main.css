@@ -42,28 +42,35 @@ header .icon-bar {
 .site-section {
 	padding: 40px 0;
 }
+.site-section.gray {
+	background: #f0f0f0;
+}
 .site-section .section-title {
 	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
 }
 
-#about .description {
+.site-section .description {
 	max-width: 600px;
 	display: block;
 	margin: auto;
 	text-align: center;
 	color: #b5b9ba;
 }
-
-.icons{
-	
-	width: 300px;
-	height: 250px;
-	
-	margin-right: 10px;
-	margin-bottom: 50px;
+#advantages h4 {
+	text-align: center;
+	color: #000;
+	display: inline-block;
 }
-
-
+#advantages .col-md-4 {
+	text-align: center;
+}
+#advantages .col-md-4 .fa {
+	text-align: center;
+	font-size: 3rem;
+	display: inline-block;
+}
 
 .titulo{
 	color: blue;
@@ -102,3 +109,4 @@ header .icon-bar {
 
 	
 }
+
