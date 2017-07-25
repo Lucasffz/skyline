@@ -101,4 +101,23 @@ $(function(){
 			}, 5000);
 		}
 	}
+
+	$("#slider").carousel({
+		interval: 5000
+	})
+
+	$(".site-section.animated").css("opacity", 0);
+
+	$(window).scroll(function(){
+
+		var $pos = $(this).scrollTop();
+
+		$(".site-section.animated").each(function(){
+			if( $pos > $(this).offset().top - 250 ) {
+				$(this).css("opacity", 1);
+				$(this).addClass("fadeInDown");
+			}
+		})
+
+	})
 })

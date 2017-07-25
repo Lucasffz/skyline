@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 body {
-	font-family: "OpenSans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 }
 header {
 	box-shadow: 0 0 2px rgba(0,0,0,0.5);
@@ -71,6 +71,58 @@ header .icon-bar {
 	font-size: 3rem;
 	display: inline-block;
 }
+#slider {
+	min-height: 40vw;
+}
+#slider .item:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 5;
+}
+#slider .carousel-control {
+	z-index: 6;
+}
+#slider .item .text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 6;
+	text-align: center;
+	color: #fff;
+
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#slider .item .text h1 {
+	color: #fff;
+	font-size: 40px;
+}
+#slider .item .text p {
+	font-size: 15px;
+	line-height: 145%;
+	font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .titulo{
 	color: blue;
