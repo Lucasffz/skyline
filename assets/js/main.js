@@ -1,30 +1,4 @@
-function $_GET( index, divider = "?" ) {
-	var url = document.location.href;
-
-	if( url.indexOf( divider ) < 0 ) return null;
-
-	var data = url.split(divider)[1];
-	var opts = data.split("&");
-
-	var params = {};
-	for ( opt in opts ) {
-		if( opts[opt].indexOf("=") > 0 ) {
-			opts[opt] = opts[opt].split("=");
-			params[ opts[opt][0] ] = opts[opt][1];
-		} else {
-			params[opts[opt]] = null;
-		}
-	}
-
-	if( !index ) return params;
-
-	if( index in params ) return params[ index ];
-
-	return false;
-}
-
 $(function(){
-
 	$("[data-toggle=\"tooltip\"]").tooltip();
 
 	if( $.jMaskGlobals ) {
@@ -65,6 +39,14 @@ $(function(){
 				datasets: [{
 					label: 'Movimentações em R$ nos últimos meses',
 					data: [12000, 19000, 3000, 5000, 14000, 3000],
+					// backgroundColor: [
+					// 	'rgba(255, 99, 132, 0.2)',
+					// 	'rgba(54, 162, 235, 0.2)',
+					// 	'rgba(255, 206, 86, 0.2)',
+					// 	'rgba(75, 192, 192, 0.2)',
+					// 	'rgba(153, 102, 255, 0.2)',
+					// 	'rgba(255, 159, 64, 0.2)'
+					// ],
 					borderWidth: 1
 				}]
 			},
