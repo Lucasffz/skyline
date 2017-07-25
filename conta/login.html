@@ -9,7 +9,10 @@
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css"><!-- CSS bootstrap -->
 	<link rel="stylesheet" href="../assets/css/main.css"><!-- CSS Custom -->
 	<link rel="stylesheet" href="../assets/css/responsive.css"><!-- CSS Custom -->
-
+	
+	<script>
+	if( localStorage.getItem('loggedIn') ) document.location.href = 'index.html';
+	</script>
 </head>
 <body>
 	
@@ -30,15 +33,14 @@
 					<div id="navbar3" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="../">Início</a></li>
-							<li><a href="#">Sobre</a></li>
-							<li><a href="#">Serviços</a></li>
-							<li><a href="#">Contato</a></li>
+							<li><a href="../sobre.html">Sobre</a></li>
+							<li><a href="../servicos.html">Serviços</a></li>
+							<li><a href="../contato.html">Contato</a></li>
 							<li class="dropdown" class="active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Área do Usuário <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href="login.html">Acesse sua conta</a></li>
 									<li><a href="cadastro.html">Abra sua conta</a></li>
-									<li><a href="servicos.html">Consulte outros serviços</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -61,6 +63,10 @@
 							<i class="fa fa-lock"></i> <strong>Acesse sua conta</strong>
 						</div>
 						<div class="panel-body">
+							<div class="alert alert-success alert-dismissable logout-info hide">
+								<a href="#" class="alert-dismiss close" data-dismiss="alert">&times;</a>
+								<i class="fa fa-check"></i> Logout efetuado com sucesso
+							</div>
 							<form action="index.html" method="post" novalidate="">
 								<div class="form-group">
 									<label for="">Agência</label>
@@ -86,7 +92,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="btn-group pull-right">
-											<button class="btn btn-default" type="button" data-toggle="modal" data-target="#first-access">Primeiro acesso</button>
+											<button class="btn btn-default" type="button" data-toggle="modal" data-target="#first-access">Não tenho a senha da internet</button>
 											<button class="btn btn-primary" type="submit">Acessar <i class="fa fa-unlock"></i></button>
 										</div>
 									</div>
