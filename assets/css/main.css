@@ -12,10 +12,12 @@ img {
 	height: auto;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h6 {
 	color: #0463a7;
 }
-
+h5{
+	color: #37323e;
+}
 body {
 	font-family: "Open Sans", sans-serif;
 }
@@ -117,6 +119,16 @@ header .icon-bar {
 	width: 24%;
 	padding: 15px;
 }
+
+
+.clients{
+	border:2px solid #bfbdc1;
+
+}
+
+
+
+
 
 footer { 
 	background-color:#0c1a1e;
