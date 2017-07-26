@@ -10,4 +10,24 @@
 		margin-right: auto;
 		max-width: 300px;
 	}
+
+	#slider .item .text h1 {
+		font-size: 25px;
+	}
+
+	#advantages [class*='col-'] {
+		margin-bottom: 30px;
+	}
+	#partners .partner {
+		width: 49%;
+	}
+	.footerleft {
+		padding: 15px;
+	}
+}
+@media handheld, only screen and (max-width: 560px) {
+		#slider .item img {
+		max-width: 250%;
+		width: 250%;
+	}
 }

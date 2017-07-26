@@ -74,7 +74,7 @@ header .icon-bar {
 	display: inline-block;
 }
 #slider {
-	min-height: 40vw;
+	min-height: 30vw;
 }
 #slider .item:before {
 	content: "";
