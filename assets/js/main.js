@@ -100,6 +100,20 @@ $(function(){
 				$(this).addClass("fadeInDown");
 			}
 		})
+	})
 
+	$(".contact").submit(function(e){
+		e.preventDefault();
+
+		if( $(this).find(".name").val().length < 4 ) {
+			alert("Insira seu nome corretamente");
+		} else if( $(this).find(".email").val().indexOf('@') < 0 || $(this).find(".email").val().indexOf('.') < 0 ) {
+			alert("Insira seu email corretamente");
+		} else if( $(this).find(".message").val().length < 4 ) {
+			alert("Insira sua mensagem");
+		} else {
+			alert("Mensagem enviada com sucesso");
+			$(this).find('input,textarea').val('');
+		}
 	})
 })
