@@ -63,7 +63,7 @@ $(function(){
 				labels: ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"],
 				datasets: [{
 					label: 'Movimentações em R$ nos últimos meses',
-					data: [12000, 19000, 3000, 5000, 14000, 3000],
+					data: [12000, 19000, 3000, 5000, 14000, 5000],
 					borderWidth: 1
 				}]
 			},
