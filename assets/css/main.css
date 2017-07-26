@@ -126,7 +126,12 @@ header .icon-bar {
 
 }
 
-
+.servicos{
+	margin-bottom: 60px;
+}
+.servi-size{
+	font-size: 16px;
+}
 
 footer { 
 	background-color:#0c1a1e;
