@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title> Skyline > Conta > Início </title>
+	<title> Skyline </title>
 
 	<meta name="viewport" content="width=device-width,initial-scale=1"><!-- para aparelhos móveis -->
 
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css"><!-- CSS bootstrap -->
-	<link rel="stylesheet" href="../assets/css/main.css"><!-- CSS Custom -->
-	<link rel="stylesheet" href="../assets/css/responsive.css"><!-- CSS Custom -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css"><!-- CSS bootstrap -->
+	<link rel="stylesheet" href="assets/css/main.css"><!-- CSS Custom -->
+	<link rel="stylesheet" href="assets/css/responsive.css"><!-- CSS Custom -->
 
-	<script>
-	if( localStorage.getItem('loggedIn') != "true" ) document.location.href = 'login.html';
-	</script>
 </head>
 <body>
 	
@@ -26,25 +23,22 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-						<a class="navbar-brand logo" href="">
-							<img src="../assets/img/logo-text.png" alt="Skyline">
+						<a class="navbar-brand logo" href="index.html">
+							<img src="assets/img/logo-text.png" alt="Skyline">
 						</a>
 					</div>
 					<div id="navbar3" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="../">Início</a></li>
-							<li><a href="../sobre.html">Sobre</a></li>
-							<li><a href="../servicos.html">Serviços</a></li>
-							<li><a href="../contato.html">Contato</a></li>
-							<li class="dropdown" class="active">
+							<li class="active"><a href="#">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="servicos.html">Serviços</a></li>
+							<li><a href="contato.html">Contato</a></li>
+							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Área do Usuário <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a>Bom dia, <strong>Usuário</strong> <i class="fa fa-user"></i></a></li>
-									<li><a href="#" class="logout">Sair</a></li>
-									<li class="divider"></li>
-									<li><a href="login.html">Acesse sua conta</a></li>
-									<li><a href="cadastro.html">Abra sua conta</a></li>
-									<li><a href="servicos.html">Consulte outros serviços</a></li>
+									<li><a href="conta/login.html">Acesse sua conta</a></li>
+									<li><a href="conta/cadastro.html">Abra sua conta</a></li>
+									<li><a href="conta/servicos.html">Consulte outros serviços</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -55,50 +49,158 @@
 			</nav>
 		</div>
 	</header>
+	<!-- Carrossel slids-->
+	<section id="slider" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target="#slider" data-slide-to="0" class="active"></li>
+			<li data-target="#slider" data-slide-to="1"></li>
+			<!-- <li data-target="#slider" data-slide-to="2"></li> -->
+		</ol>
 
-	<section class="site-section user-main" id="main">
-		<div class="container">
-			<h1>Bem Vindo <strong>Usuário</strong>!</h1>
-
-			<div class="panel panel-default">
-				<div class="panel-heading"><i class="fa fa-money"></i> Movimentações Financeiras</div>
-				<div class="panel-body">
-					<canvas id="transactions" width="400" height="100"></canvas>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<img src="http://lorempixel.com/1000/400/city?1" alt="...">
+				<div class="text">
+					<h1>Seja nosso cliente</h1>
+					<p>Somos uma das startups que mais cresceu em 2016, segundo a pesquisa Jurubeba</p>
 				</div>
 			</div>
-
-			<br>
-			<div class="operations">
-				<div class="row">
-					<div class="col-md-3">
-						<ul class="nav nav-tabs nav-pills nav-stacked">
-							<li class="active"><a href="#account">Conta Corrente</a></li>
-							<li><a href="#payment">Pagamentos</a></li>
-						</ul>
-					</div>
-					<div class="col-md-9">
-						<div class="tab-content">
-							<div class="tab-pane active" id="account">
-								Conta
-							</div>
-							<div class="tab-pane" id="payment">
-								pagamentoss
-							</div>
-						</div>
-					</div>
+			<div class="item">
+				<img src="http://lorempixel.com/1000/400/city?2" alt="...">
+				<div class="text">
+					<h1>Faça parte do nosso time</h1>
+					<p>Eleita a melhor empresa de finanças do Brasil. Somos melhores que o Nubank, com certeza!</p>
 				</div>
+			</div>
+		</div>
+
+		<!-- Controls -->
+		<a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#slider" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</section>
+
+	<section class="site-section animated" id="about">
+		<div class="container">
+			<h3 class="section-title">Sobre a Empresa</h3>
+
+			<div class="description">
+				<p> O mundo atual é preenchido por um vasto desenvolvimento tecnológico e, claramente, a Skyline não iria deixar de utilizar um sistema que iria facilitar a vida de seus clientes. Abandonando a rotina corriqueira e cansativa de ser necessário ir a um banco, passar horas na fila, enfrentar burocracias e perder tempo, o banco Skyline oferece um atendimento seguro e eficiente, direto da sua mão. Esse banco é certo para você!</p>
 			</div>
 		</div>
 	</section>
 
-	<link rel="stylesheet" href="../assets/css/font-awesome.min.css"><!-- fonticons -->
-	<link rel="stylesheet" href="../assets/fonts/OpenSans/stylesheet.css"><!-- fonticons -->
+	<section class="site-section gray animated" id="advantages">
+		<div class="container">
+			<h3 class="section-title">Vantagens</h3>
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-database"></i>
 
-	<script src="../assets/js/jquery.min.js"></script><!-- JS bootstrap -->
-	<script src="../assets/js/bootstrap.min.js"></script><!-- JS bootstrap -->
-	<!-- <script src="../assets/js/jquery.mask.js"></script> --><!-- JS custom -->
-	<script src="../assets/js/chart.min.js"></script>
-	<script src="../assets/js/main.js"></script><!-- JS custom -->
+					<h4>Tecnologia</h4>	
+				 	<div class="description">
+				 		A Skyline oferece aos seus clientes um sistema muito bem programado pelos melhores desenvolvedores do país.	Seu sistema é totalmente interativo e, com certeza, ele fará com que seus usuários sintam-se atendidos com praticidade e exatidão. Seu atendimento imediato irá superar toda a burocracia dos bancos comuns, além de suas parcerias com empresas de inovação tecnológica oferece aos usuários de nosso banco,mesmo em agências físicas, uma maior dinamicidade e eficiência para contratação dos nossos serviços.
+				 	</div>
+				</div>
+
+				<div class="col-md-4">
+					<i class="fa fa-lock"></i>
+
+					<h4>Confiança</h4>
+
+					<div class="description">
+						Se a dúvida sobre a segurança da Skyline surgir, saiba que a única possibilidade de ser comprometida é de causas advindas do próprio usuário. Contamos com um sistema de criptografia avançado para proteger os dados de nossos clientes. E não acaba por aqui! Mesmo que o acesso apareça simplório, todas as ações enquanto o cliente estiver logado são registradas em nossos bancos de dados e são informados para o e-mail dado pelo usuário. Caso aconteça algo desagradável para o cliente, ele pode simplesmente se comunicar com a equipe de suporte ao cliente e resolver em poucos minutos. Afinal, a Skyline prioriza o conforto de seus clientes. 
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<i class="fa fa-mobile"></i>
+
+					<h4>Comodidade</h4>
+					<div class="description">
+				 		Está com a agenda apertada e não sabe em que horário pode encaixar uma ida ao banco para passar por várias burocracias e perda de tempo? Está em uma situação emergencial	em que não há condições para sacar seu capital ou pagar por algo com um preço além do que você esperava? Com a Skyline, você pode tanto pagar uma conta através do nosso sistema através do seu celular ou outro meio tecnológico, como também pode transferir capital para outros usuários que utilizam a Skyline, por meio de seus aparelhos eletrônicos. A Skyline valoriza o tempo e a acomodação de seus clientes, além de expandir a comunidade de nossos clientes. Já pensou em ir no seu melhor restaurante e pagar a conta com simples dígitos através do seu celular? Apenas na Skyline! 
+				 	</div>	
+				</div> 	
+			 </div>
+		</div>
+	</section>
+
+	<section class="site-section" id="partners">
+		 <div class="container">
+	 		<h3 class="section-title">Parceiros e Clientes</h3>
+	 		<div class="row">
+ 				<div class="partner">
+ 		 				<img src="assets/img/Parceiros/company.png">	 								
+ 				</div>
+ 				<div class="partner">
+ 					<img src="assets/img/Parceiros/designer.png">
+ 				</div>
+				<div class="partner">
+					<img src="assets/img/Parceiros/google.png">
+				</div>
+				<div class="partner">
+					<img src="assets/img/Parceiros/lorem.png">
+				</div>
+	 		</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 footerleft ">
+					<div class="logofooter">
+						<img src="assets/img/logo-text.png">
+					</div>
+					<p>Skyline, a grande muralha do invisível</p>
+					<p><i class="fa fa-map-pin"></i> Rua Azor-Ahai,10100</p>
+					<p><i class="fa fa-phone"></i> Telefone(Brasil): +55 800 201 693</p>
+					<p><i class="fa fa-envelope"></i> E-mail : sky_bank10100@gmail.com</p>
+					
+				</div>
+				<div class="col-md-2 col-sm-6 paddingtop-bottom">
+					<h6 class="heading7">GENERAL LINKS</h6>
+					<ul class="footer-ul">
+						<li><a href="index.html">Início</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="servicos.html">Serviços</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="conta/login.html">Acesse sua conta</a></li>
+						<li><a href="conta/cadastro.html">Crie sua conta</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+	</footer>
+	
+	<div class="copyright">
+		<div class="container">
+		<div class="col-md-6">
+			<p>© 2017 - Nenhum direito reservado</p>
+		</div>
+		<div class="col-md-6">
+			<ul class="bottom_ul">
+				
+			</ul>
+		</div>
+		</div>
+	</div>
+		
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css"><!-- fonticons -->
+	<link rel="stylesheet" href="assets/css/animate.css"><!-- fonticons -->
+	<link rel="stylesheet" href="assets/fonts/OpenSans/stylesheet.css"><!-- fonticons -->
+
+	<script src="assets/js/jquery.min.js"></script><!-- JS bootstrap -->
+	<script src="assets/js/bootstrap.min.js"></script><!-- JS bootstrap -->
+	<script src="assets/js/main.js"></script><!-- JS custom -->
+
+
 
 </body>
 </html>
